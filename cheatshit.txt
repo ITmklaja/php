@@ -1,0 +1,301 @@
+document.getElementById('').innerHTML= '';	text
+document.getElementById('').src=''; 		img
+document.getElementById('').value='';       
+document.getElementById('').style.[...]= '';
+documentwrite()						output
+window.alert()						alert
+console.log()						consol
+window.print()						printing
+
+function nazwa(){
+*
+}
+
+
+html
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+    <select name="" id="">
+        <optgroup label="">
+            <option></option>
+            <option></option>
+        </optgroup>
+        <optgroup label="">
+            <option></option>
+            <option></option>
+        </optgroup>
+    </select>
+    
+<ul> 					// dost
+	<li>[...]</li>			
+</ul>
+
+<ol> 					// chars
+	<li>[...]</li>			
+</ol>
+
+<ol type="">			// 1- numbers, a- alphabetically order, A- alphabetically order uppercase, i- roman numbers, I- roman nubers uppercase
+	<li>[...]</li>	
+</ol>
+
+<dl>					// description
+  <dt>[...]</dt>
+  <dd>[...]</dd>
+</dl>
+
+onclick - po kliknięciu i puszczeniu lewego przycisku myszy 
+ondblclick - po dwukrotnym kliknięciu i puszczeniu lewego przycisku myszy 
+onmousedown - po kliknięciu przycisku myszy 
+onmouseup - po zwolnieniu przycisku myszy
+onmouseover - po umieszczeniu przycisku na elemencie
+onmouseout - po umieszczeniu kursora poza elementem
+onmousemove - przy każdej zmianie położenia kursora
+
+onkeypress - po kliknięciu klawisza
+onkeydown - po naciśnięciu klawisza
+onkeyup - po zwolnieniu przycisku
+
+onload - po załadowaniu
+onresize - po zmianie roziaru okna
+onscroll - przy przewijaniu
+onunload - przy zamknięciu okna przeglądarki
+
+onsubmit - przy wysłaniu
+onreset - przy zresetowaniu
+onchange - przy zmianie
+onfocus - po kliknięciu na pole tekstowe
+onblur - po opuszczeniu pola textowego
+
+getDay() - pobranie dnia            setDay() - ustawiene dnia
+getDate() - pobranie daty           setDate() - ustawienie daty
+getHours() - pobranie godziny       setHours() - ustawienie godziny
+getMinutes() - pobranie miuty       setMinutes()- ustawienie minuty
+getMonth() - pobranie miesiąca      setMonth() - ustawienie miesiąca
+getSeconds() - pobranie sekund      setSeconds() - ustawienie sekundy
+getTime() - pobranie czasu          setTime() - ustawienie czasu
+getYear() - pobranie roku           setYear() - ustawiene roku
+
+Math.E        // returns Euler's number
+Math.PI       // returns PI
+Math.SQRT2    // returns the square root of 2
+Math.SQRT1_2  // returns the square root of 1/2
+Math.LN2      // returns the natural logarithm of 2
+Math.LOG2E    // returns base 2 logarithm of E
+
+Math.round() - zaokrąglene do najbliższej liczby całkowitej
+Math.celi() - zaokrąglene w górę do najbliższej liczby całkowitej
+Math.floor() - zaokrąglene w dół do najbliższej liczby całkowitej
+
+Math.pow(liczba, potęga) - potęgowanie
+Math.sqrt() - pierwiastek
+Math.abs() - wartość bezwzględna
+Math.min, Math,max - min max
+Math.random() - losowanie
+Math.floor(Math.random()*101) +1 - losowanie liczb całkowitych
+
+var text = "ABCD";
+var długość = text.length;
+var część = text.slice(od, do)
+var subczęść = text.subslice(od, do)
+var zmienione = text.replace(od, do)
+
+.toUperCase() .toLowerCase
+
+var text1, text2
+var text3 = text1.concat(text2)
+
+var dane = "Imie Nazwisko";
+var danearray = dane.split(" ");
+document.getElementById("").innerHTML = danearray[0];
+
+var tablica = [war1, war2, war3]
+tostring()
+
+
+slider: 
+function zmiana(){
+    let x = 1;
+    document.getElementById("").src="" + x + ""; 
+}
+
+let y = 1;
+
+function tyl(){
+    if(y == 1){
+        y = 8;
+    }
+    y--;
+}   
+
+function przod(){
+    if(y == 7){
+        y = 0;
+    }
+    y++;
+}
+
+function slider(){
+    document.getElementById("").src="" + y + ""; 
+}
+
+<script>
+    window.onload = myRandom;
+    var gallery = ["IMG/1.png","IMG/2.png","IMG/3.png","IMG/4.png","IMG/5.png];
+    function myRandom(){
+    var randomItem = gallery[Math.floor(Math.random()*gallery.length)];
+    document.getElementById("myPicture").src = randomItem;
+    }
+</script>
+
+function time(){
+    const data = new Date;
+    const dzien = data.getDate();
+    const miesiac = data.getMonth()+1;
+    const rok = data.getFullYear();
+    const godzina = data.getHours();
+    const minuta = data.getMinutes();
+    const sekunda = data.getSeconds();
+
+    document.getElementById("footer-text").innerHTML = "LOKALNA DATA i CZAS:" + dzien + "." + miesiac + "." + rok + ", " + godzina + ":" + minuta + ":" + sekunda;
+}
+
+setInterval(time, 1000)
+
+php
+
+$a + $b;            // dodawanie
+$a - $b;            // odejmowanie
+$a * $b;            // mnożenie
+$a / $b;            // dzielenie
+$a % $b;            // reszta z dzielenia
+$a && $b;           // i
+$a || $b;           // lub
+! $a;               // różne od
+$a == $b;           // jest równe
+$a === $b;          // jest identyczne (typ zmiennej)
+
+
+<?php ?>
+$deklarowanie zmiennej
+echo "", "";
+print "". "";
+
+if(){
+	.
+}elseif(){
+	.
+}else{
+	.
+}
+
+switch ($string){
+    case "":
+        .
+    break;
+    case "":
+        .
+    break;
+    case "":
+        .
+    break;
+    case "":
+        .
+    break;
+     default:
+        .
+}
+
+while (){
+	.
+}
+
+do{
+	.
+}while()
+
+foreach ($nazwa_tabeli as $i => $i_value){
+    echo "Key=" , $i , ", Value=" , $i_value;
+}
+
+$tablica = array("kom1", "kom2", "kom3");
+
+
+$nazwa = array(
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "",
+    "" => "");
+
+foreach ($nazwa as $i => $i_value) {
+echo "Key=" , $i , ", Value=" , $i_value;
+echo "<br>";
+}
+print_r($nazwa);
+
+echo "dzisiejsza data: ", date("d/m/Y"), ", ", date("l");
+
+a, A określenie przed południem lub popołudniu (a – małe am, pm; A- AM, PM)
+c data i czas zgodne z formatem ISO 8601
+d dzień miesiąca z zerem na początku, od 01 do 31
+D dzień w formie trzyliterowego skrótu (ang.), np. Mon, Tue
+F pełna nazwa miesiąca w jęz. ang., np. January
+g godzina w formacie dwunastogodzinnym bez zera na początku, od 1 do 12
+G godzina w formacie dwudziestoczterogodzinnym bez zera na początku, od 1 do 24
+H godzina w formacie dwudziestoczterogodzinnym z zerem, od 01 do 24
+i liczba minut z zerem na początku, od 01 do 59
+l nazwa dnia tygodnia, np. Monday
+m miesiąc w postaci dwucyfrowej z zerem na początku, od 01 do 12
+s liczba sekund z zerem na początku
+Y rok w postaci 4 cyfr, np. 2014
+
+$data = getdate();
+$seconds = $data["seconds"];
+$minutes = $data["minutes"];
+$hours = $data["hours"];
+$dayofthemonth = $data["mday"];
+$dayoftheweek = $data["wday"];
+$month = $data["month"];
+$year = $data["year"];
+$dayoftheyear = $data["yday"];
+$dayname = $data["weekday"];
+$monthname = $data["month"];
+
+$czas = mktime(16,30,0,12,24,2010);
+
+asort() - sortuje tablice asocjacyjne zachowując przypisanie kluczy do wartości
+arsort() - sortuje w odwrotnej kolejności tablice asocjacyjne zachowując przypisanie kluczy do wartości.
+ksort() - sortuje tablice asocjacyjne według kluczy.
+rsort() - sortuje zwykłe tablice (nie asocjacyjne) w odwróconej kolejności
+sort() - sortuje zwykłe tablice (nie asocjacyjne) w kolejności alfabetycznej
+uasort() - funkcja sortująca tablice asocjacyjne za pomocą zdefiniowanej przez użytkownika
+funkcji porównującej elementy (nazwa funkcji jest podawana za pomocą drugiego parametru)
+usort() - funkcja sortująca zwykłe tablice za pomocą funkcji zdefiniowanej przez użytkownika
+uksort() - funkcja sortująca tablice asocjacyjne według klucza za pomocą funkcji zdefiniowanej przez użytkownika.
+Większość funkcji (oprócz trzech ostatnich) przyjmuje jeden parametr: zmienną zawierającą tablicę
+do posortowania.
+
